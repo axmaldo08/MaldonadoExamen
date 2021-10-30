@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MaldonadoExamen.resumen">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="#FFD700">
+            <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+                <Label x:Name="lbUsuario" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre: " Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtUsuario"  Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Cuota Inicial" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtCuotaI" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Valor de cada cuota" Grid.Row="2" Grid.Column="0"></Label>
+                <Entry x:Name="txtcuotas" Grid.Row="2" Grid.Column="1"/>
+                </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

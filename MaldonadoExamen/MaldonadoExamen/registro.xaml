@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MaldonadoExamen.registro">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FFD700" >
+            <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+                <Label x:Name="lbUsuario" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtDato1"  Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="Monto Inicial" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtDato2" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" TextChanged="txtDato2_TextChanged" ></Entry>
+
+                <Label Text="Monto mensual" Grid.Row="2" Grid.Column="0"></Label>
+                <Entry x:Name="txtDato4" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" ></Entry>
+                <Button x:Name="btnMensual" Text="Calcular Cuota" FontSize="10" Grid.Row="2" Grid.Column="2" Clicked="btnMensual_Clicked"></Button>
+                
+            </Grid>
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
